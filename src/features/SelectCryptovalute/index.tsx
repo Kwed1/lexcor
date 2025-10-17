@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
-import { createPortal } from 'react-dom'
-import { ReactComponent as Arrow } from '../../assets/arrow.svg'
+import { motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
+import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 
 interface Props {
 	setValute: React.Dispatch<React.SetStateAction<string>>;
@@ -19,9 +19,11 @@ export default function SelectCryptovalute({ setValute, coins }: Props) {
 	};
 
 	const handleSelect = (coin: string) => {
+		console.log('Selecting coin:', coin);
 		setValute(coin);
 		setSelectedValute(coin);
-		setIsOpen(false)
+		setIsOpen(false);
+		console.log('Selected coin set to:', coin);
 	};
 
 	useEffect(() => {
@@ -37,7 +39,12 @@ export default function SelectCryptovalute({ setValute, coins }: Props) {
 
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
-			if (selectRef.current && !selectRef.current.contains(event.target as Node)) {
+			const target = event.target as Node;
+			const dropdown = document.querySelector('[data-dropdown="crypto-select"]');
+			
+			if (selectRef.current && 
+				!selectRef.current.contains(target) && 
+				!dropdown?.contains(target)) {
 				setIsOpen(false);
 			}
 		};
@@ -64,13 +71,18 @@ export default function SelectCryptovalute({ setValute, coins }: Props) {
 				width: position.width,
 				zIndex: 9999
 			}}
+			data-dropdown="crypto-select"
+			onClick={(e) => e.stopPropagation()}
 		>
 			<ul className='p-2 text-[11px] flex flex-col gap-1'>
 				{coins.map((coin, index) => (
 					<li 
 						key={index} 
 						className='border-b border-crypto-border-primary pb-1 cursor-pointer hover:text-crypto-brand-primary hover:bg-crypto-bg-hover text-crypto-text-secondary transition-colors px-2 py-1 rounded' 
-						onClick={() => handleSelect(coin)}
+						onClick={(e) => {
+							e.stopPropagation();
+							handleSelect(coin);
+						}}
 					>
 						{coin}
 					</li>
