@@ -150,7 +150,7 @@ export default function CreateDeal() {
 
 				{/* Currency Selection */}
 				<motion.div 
-					className='bg-crypto-bg-secondary rounded-2xl p-6 mb-6 shadow-crypto border border-crypto-border-primary'
+					className='bg-crypto-bg-secondary rounded-2xl p-6 mb-6 shadow-crypto border border-crypto-border-primary relative z-10'
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.3 }}
@@ -170,7 +170,7 @@ export default function CreateDeal() {
 
 				{/* Range Slider */}
 				<motion.div 
-					className='bg-crypto-bg-secondary rounded-2xl p-6 mb-6 shadow-crypto border border-crypto-border-primary'
+					className='bg-crypto-bg-secondary rounded-2xl p-6 mb-6 shadow-crypto border border-crypto-border-primary relative z-0'
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.4 }}

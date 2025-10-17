@@ -35,11 +35,12 @@ export const useMockDataInitializer = () => {
 		// Инициализация mem_coins для слайдера
 		const memCoins = mockCoins.map(coin => ({
 			token: coin.token,
-			price: coin.token === 'BTC' ? mockWalletBalance.BTC :
-				coin.token === 'ETH' ? mockWalletBalance.ETH :
-					coin.token === 'BNB' ? mockWalletBalance.BNB :
-						coin.token === 'USDT' ? mockWalletBalance.USDT :
-							coin.token === 'TRX' ? mockWalletBalance.TRX : 0
+			price: coin.token === 'ARES' ? mockWalletBalance.ARES :
+				coin.token === 'MOONCAT' ? mockWalletBalance.MOONCAT :
+					coin.token === 'SUNDOG' ? mockWalletBalance.SUNDOG :
+						coin.token === 'TBULL' ? mockWalletBalance.TBULL :
+							coin.token === 'USDT' ? mockWalletBalance.USDT :
+								coin.token === 'TRX' ? mockWalletBalance.TRX : 0
 		}))
 		setMemCoins(memCoins)
 

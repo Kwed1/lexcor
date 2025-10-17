@@ -28,12 +28,10 @@ export default function SelectCoinForWithdraw({selectedCoin, setIsOpen, isOpen, 
 			return (
 				<img src={TrxIcon} className='w-6 h-6 rounded-full' alt="" />
 			)
-			case 'BTC':
-			case 'ETH':
-			case 'BNB':
-			case 'LINK':
-			case 'LTC':
-			case 'SOL':
+			case 'ARES':
+			case 'MOONCAT':
+			case 'SUNDOG':
+			case 'TBULL':
 				return <CryptoIcon token={token} size="md" className="w-6 h-6" />
 			default: 
 			return <CryptoIcon token={token} size="md" className="w-6 h-6" />
@@ -45,12 +43,10 @@ export default function SelectCoinForWithdraw({selectedCoin, setIsOpen, isOpen, 
 			case 'PINO': return 'PINO'
 			case 'USDT': return 'USDT'
 			case 'TRX': return 'TRX'
-			case 'BTC': return 'Bitcoin'
-			case 'ETH': return 'Ethereum'
-			case 'BNB': return 'Binance Coin'
-			case 'LINK': return 'Chainlink'
-			case 'LTC': return 'Litecoin'
-			case 'SOL': return 'Solana'
+			case 'ARES': return 'Ares Protocol'
+			case 'MOONCAT': return 'Mooncat'
+			case 'SUNDOG': return 'Sundog'
+			case 'TBULL': return 'Tbull'
 			default: 
 				const coin = coins.find(c => c.token === token)
 				return coin?.name || token

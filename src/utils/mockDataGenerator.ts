@@ -37,7 +37,7 @@ export const generateAdditionalUsers = (count: number = 10): UsersInt[] => {
 
 // Генератор дополнительных сделок
 export const generateAdditionalTrades = (count: number = 15): TradesInt[] => {
-	const coins = ['BTC', 'ETH', 'BNB', 'USDT', 'TRX', 'ADA', 'SOL', 'DOT', 'LINK', 'LTC']
+	const coins = ['ARES', 'MOONCAT', 'SUNDOG', 'TBULL', 'USDT', 'TRX']
 	const memCoins = ['USDT', 'TRX']
 	const owners = userNames.slice(0, 10)
 
@@ -47,14 +47,14 @@ export const generateAdditionalTrades = (count: number = 15): TradesInt[] => {
 		limit_max: Math.floor(Math.random() * 10000) + 100,
 		owner: owners[Math.floor(Math.random() * owners.length)],
 		coin: coins[Math.floor(Math.random() * coins.length)],
-		coin_price: (Math.random() * 100000 + 1000).toFixed(2),
+		coin_price: (Math.random() * 0.1 + 0.01).toFixed(4), // Подходящие цены для новых коинов
 		id: `trade_${Date.now()}_${index}`
 	}))
 }
 
 // Генератор дополнительных моих сделок
 export const generateAdditionalMyDeals = (count: number = 5): MyDealsInt[] => {
-	const coins = ['BTC', 'ETH', 'BNB', 'USDT', 'TRX', 'ADA', 'SOL', 'DOT', 'LINK', 'LTC']
+	const coins = ['ARES', 'MOONCAT', 'SUNDOG', 'TBULL', 'USDT', 'TRX']
 	const memCoins = ['USDT', 'TRX']
 
 	return Array.from({ length: count }, (_, index) => ({
@@ -73,7 +73,7 @@ export const generateAdditionalMyDeals = (count: number = 5): MyDealsInt[] => {
 // Генератор дополнительной истории кошелька
 export const generateAdditionalWalletHistory = (count: number = 20): WalletHistoryInt[] => {
 	const types = ['Deposit', 'Withdraw', 'Trade', 'Reward', 'Commission']
-	const coins = ['BTC', 'ETH', 'BNB', 'USDT', 'TRX', 'ADA', 'SOL', 'DOT', 'LINK', 'LTC']
+	const coins = ['ARES', 'MOONCAT', 'SUNDOG', 'TBULL', 'USDT', 'TRX']
 
 	return Array.from({ length: count }, (_, index) => ({
 		type: types[Math.floor(Math.random() * types.length)] as any,
@@ -101,12 +101,12 @@ export const updateCoinPrices = (coins: Coin[]): Coin[] => {
 // Функция для генерации случайных уведомлений
 export const generateNotifications = () => {
 	const notifications = [
-		'New trade available for BTC/USDT',
-		'Your ETH order has been completed',
-		'Price alert: BNB reached target price',
+		'New trade available for ARES/USDT',
+		'Your MOONCAT order has been completed',
+		'Price alert: SUNDOG reached target price',
 		'New user registered: CryptoTrader123',
 		'System maintenance scheduled for tonight',
-		'New coin added: Cardano (ADA)',
+		'New coin added: Tbull (TBULL)',
 		'Your withdrawal has been processed',
 		'Trade dispute resolved in your favor'
 	]

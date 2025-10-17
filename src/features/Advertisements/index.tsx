@@ -18,12 +18,12 @@ interface Advertisement {
 }
 
 const mockAdvertisements: Advertisement[] = [
-  // BTC объявления
+  // ARES объявления
   {
     id: 'adv_1',
     mem_coin: 'USDT',
-    coin: 'BTC',
-    price: 67500.50,
+    coin: 'ARES',
+    price: 0.024,
     owner: 'CryptoKing',
     limit_min: 100,
     limit_max: 5000,
@@ -35,8 +35,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_2',
     mem_coin: 'TRX',
-    coin: 'BTC',
-    price: 67500.25,
+    coin: 'ARES',
+    price: 0.024,
     owner: 'CryptoLegend',
     limit_min: 200,
     limit_max: 10000,
@@ -48,8 +48,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_3',
     mem_coin: 'USDT',
-    coin: 'BTC',
-    price: 67500.75,
+    coin: 'ARES',
+    price: 0.024,
     owner: 'BitcoinMaster',
     limit_min: 500,
     limit_max: 25000,
@@ -59,12 +59,12 @@ const mockAdvertisements: Advertisement[] = [
     online: false
   },
   
-  // ETH объявления
+  // MOONCAT объявления
   {
     id: 'adv_4',
     mem_coin: 'TRX',
-    coin: 'ETH',
-    price: 2450.25,
+    coin: 'MOONCAT',
+    price: 0.012,
     owner: 'TraderPro',
     limit_min: 50,
     limit_max: 2000,
@@ -76,8 +76,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_5',
     mem_coin: 'USDT',
-    coin: 'ETH',
-    price: 2450.80,
+    coin: 'MOONCAT',
+    price: 0.012,
     owner: 'BlockchainBoss',
     limit_min: 100,
     limit_max: 5000,
@@ -89,8 +89,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_6',
     mem_coin: 'TRX',
-    coin: 'ETH',
-    price: 2450.60,
+    coin: 'MOONCAT',
+    price: 0.012,
     owner: 'EthereumKing',
     limit_min: 300,
     limit_max: 15000,
@@ -100,12 +100,12 @@ const mockAdvertisements: Advertisement[] = [
     online: false
   },
 
-  // BNB объявления
+  // SUNDOG объявления
   {
     id: 'adv_7',
     mem_coin: 'USDT',
-    coin: 'BNB',
-    price: 600.75,
+    coin: 'SUNDOG',
+    price: 0.04,
     owner: 'BitMaster',
     limit_min: 200,
     limit_max: 10000,
@@ -117,8 +117,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_8',
     mem_coin: 'TRX',
-    coin: 'BNB',
-    price: 600.50,
+    coin: 'SUNDOG',
+    price: 0.04,
     owner: 'DeFiDragon',
     limit_min: 100,
     limit_max: 8000,
@@ -128,12 +128,12 @@ const mockAdvertisements: Advertisement[] = [
     online: true
   },
 
-  // SOL объявления
+  // TBULL объявления
   {
     id: 'adv_9',
     mem_coin: 'TRX',
-    coin: 'SOL',
-    price: 28.5,
+    coin: 'TBULL',
+    price: 0.019,
     owner: 'CoinWhale',
     limit_min: 1000,
     limit_max: 50000,
@@ -145,8 +145,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_10',
     mem_coin: 'USDT',
-    coin: 'SOL',
-    price: 28.45,
+    coin: 'TBULL',
+    price: 0.019,
     owner: 'TokenTitan',
     limit_min: 300,
     limit_max: 15000,
@@ -156,12 +156,12 @@ const mockAdvertisements: Advertisement[] = [
     online: false
   },
 
-  // LTC объявления
+  // Дополнительные объявления для разнообразия
   {
     id: 'adv_11',
     mem_coin: 'USDT',
-    coin: 'LTC',
-    price: 285.30,
+    coin: 'ARES',
+    price: 0.024,
     owner: 'SatoshiFan',
     limit_min: 150,
     limit_max: 8000,
@@ -173,8 +173,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_12',
     mem_coin: 'TRX',
-    coin: 'LTC',
-    price: 285.15,
+    coin: 'MOONCAT',
+    price: 0.012,
     owner: 'LitecoinPro',
     limit_min: 200,
     limit_max: 12000,
@@ -184,12 +184,11 @@ const mockAdvertisements: Advertisement[] = [
     online: true
   },
 
-  // LINK объявления
   {
     id: 'adv_13',
     mem_coin: 'TRX',
-    coin: 'LINK',
-    price: 1.3,
+    coin: 'SUNDOG',
+    price: 0.04,
     owner: 'DeFiGuru',
     limit_min: 500,
     limit_max: 25000,
@@ -201,8 +200,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_14',
     mem_coin: 'USDT',
-    coin: 'LINK',
-    price: 1.28,
+    coin: 'TBULL',
+    price: 0.019,
     owner: 'ChainlinkMaster',
     limit_min: 100,
     limit_max: 5000,
@@ -216,8 +215,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_15',
     mem_coin: 'USDT',
-    coin: 'BTC',
-    price: 67501.00,
+    coin: 'ARES',
+    price: 0.024,
     owner: 'CryptoNinja',
     limit_min: 50,
     limit_max: 3000,
@@ -229,8 +228,8 @@ const mockAdvertisements: Advertisement[] = [
   {
     id: 'adv_16',
     mem_coin: 'TRX',
-    coin: 'ETH',
-    price: 2451.00,
+    coin: 'MOONCAT',
+    price: 0.012,
     owner: 'DigitalGold',
     limit_min: 100,
     limit_max: 6000,
@@ -256,12 +255,10 @@ export default function Advertisements({ orderType, memCoin }: Props) {
     const matchesCoin = memCoin === 'All' || 
                        ad.mem_coin === memCoin || 
                        ad.coin === memCoin ||
-                       (memCoin === 'Bitcoin' && ad.coin === 'BTC') ||
-                       (memCoin === 'Ethereum' && ad.coin === 'ETH') ||
-                       (memCoin === 'Binance Coin' && ad.coin === 'BNB') ||
-                       (memCoin === 'Chainlink' && ad.coin === 'LINK') ||
-                       (memCoin === 'Litecoin' && ad.coin === 'LTC') ||
-                       (memCoin === 'Solana' && ad.coin === 'SOL')
+                       (memCoin === 'Ares Protocol' && ad.coin === 'ARES') ||
+                       (memCoin === 'Mooncat' && ad.coin === 'MOONCAT') ||
+                       (memCoin === 'Sundog' && ad.coin === 'SUNDOG') ||
+                       (memCoin === 'Tbull' && ad.coin === 'TBULL')
     return matchesType && matchesCoin
   })
 

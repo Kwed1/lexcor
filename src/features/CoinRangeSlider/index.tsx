@@ -1,7 +1,7 @@
-import Slider from 'rc-slider';
-import 'rc-slider/assets/index.css';
-import React, { useEffect } from 'react';
-import useWalletStore from '../../shared/store/WalletStore';
+import Slider from 'rc-slider'
+import 'rc-slider/assets/index.css'
+import React, { useEffect } from 'react'
+import useWalletStore from '../../shared/store/WalletStore'
 
 interface Props {
   buyCoin: string;
@@ -63,7 +63,7 @@ const CoinRangeSlider: React.FC<Props> = ({
           borderRadius: 20,
           color: '#0B0E11',
           fontWeight: 600,
-          zIndex: 2,
+          zIndex: 1,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -101,7 +101,7 @@ const CoinRangeSlider: React.FC<Props> = ({
           borderRadius: 20,
           color: '#0B0E11',
           fontWeight: 600,
-          zIndex: 2,
+          zIndex: 1,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',

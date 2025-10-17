@@ -52,12 +52,10 @@ export default function TransactionHistory() {
 				return <img src={Usdt} alt="" className='rounded-full w-[25px]' />
 			case 'PINO':
 				return <img src={Pino} alt="" className='rounded-full w-[25px]' />
-			case 'BTC':
-			case 'ETH':
-			case 'BNB':
-			case 'LINK':
-			case 'LTC':
-			case 'SOL':
+			case 'ARES':
+			case 'MOONCAT':
+			case 'SUNDOG':
+			case 'TBULL':
 				// Используем CryptoIcon для валют с локальными иконками
 				return <CryptoIcon token={icon} size="sm" />
 			default:

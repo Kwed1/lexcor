@@ -283,9 +283,9 @@ const useMockApi = () => {
 						date: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(), // 2 hours ago
 						buyer: 'CryptoTrader',
 						seller: 'BitMaster',
-						coins: 'BTC',
+						coins: 'ARES',
 						read: false,
-						price: '67500.50',
+						price: '0.024',
 						buyer_commission_paid: true,
 						seller_commission_paid: false,
 						buyer_coin_transferred_to_bot: true,
@@ -302,9 +302,9 @@ const useMockApi = () => {
 						date: new Date(Date.now() - 5 * 60 * 60 * 1000).toISOString(), // 5 hours ago
 						buyer: 'CoinWhale',
 						seller: 'SatoshiFan',
-						coins: 'ETH',
+						coins: 'MOONCAT',
 						read: true,
-						price: '3450.25',
+						price: '0.012',
 						buyer_commission_paid: false,
 						seller_commission_paid: true,
 						buyer_coin_transferred_to_bot: false,

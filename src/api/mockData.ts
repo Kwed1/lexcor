@@ -54,52 +54,36 @@ export const mockUsers: UsersInt[] = [
 // Mock монеты (только валюты с иконками в папке valute-icons)
 export const mockCoins: Coin[] = [
 	{
-		name: 'Bitcoin',
-		token: 'BTC',
-		price_in_trx: 4250000,
-		price_in_usdt: 67500,
-		name_id: 'bitcoin',
+		name: 'Ares Protocol',
+		token: 'ARES',
+		price_in_trx: 0.15,
+		price_in_usdt: 0.024,
+		name_id: 'ares-protocol',
 		id: 'coin_1'
 	},
 	{
-		name: 'Ethereum',
-		token: 'ETH',
-		price_in_trx: 165000,
-		price_in_usdt: 2450,
-		name_id: 'ethereum',
+		name: 'Mooncat',
+		token: 'MOONCAT',
+		price_in_trx: 0.08,
+		price_in_usdt: 0.012,
+		name_id: 'mooncat',
 		id: 'coin_2'
 	},
 	{
-		name: 'Binance Coin',
-		token: 'BNB',
-		price_in_trx: 3750,
-		price_in_usdt: 600,
-		name_id: 'binancecoin',
+		name: 'Sundog',
+		token: 'SUNDOG',
+		price_in_trx: 0.25,
+		price_in_usdt: 0.04,
+		name_id: 'sundog',
 		id: 'coin_3'
 	},
 	{
-		name: 'Chainlink',
-		token: 'LINK',
-		price_in_trx: 8.2,
-		price_in_usdt: 1.3,
-		name_id: 'chainlink',
+		name: 'Tbull',
+		token: 'TBULL',
+		price_in_trx: 0.12,
+		price_in_usdt: 0.019,
+		name_id: 'tbull',
 		id: 'coin_4'
-	},
-	{
-		name: 'Litecoin',
-		token: 'LTC',
-		price_in_trx: 1800,
-		price_in_usdt: 285,
-		name_id: 'litecoin',
-		id: 'coin_5'
-	},
-	{
-		name: 'Solana',
-		token: 'SOL',
-		price_in_trx: 180,
-		price_in_usdt: 28.5,
-		name_id: 'solana',
-		id: 'coin_6'
 	}
 ]
 
@@ -110,8 +94,8 @@ export const mockTrades: TradesInt[] = [
 		limit_min: 100,
 		limit_max: 5000,
 		owner: 'CryptoKing',
-		coin: 'BTC',
-		coin_price: '67500.00',
+		coin: 'ARES',
+		coin_price: '0.024',
 		id: 'trade_1'
 	},
 	{
@@ -119,8 +103,8 @@ export const mockTrades: TradesInt[] = [
 		limit_min: 50,
 		limit_max: 3000,
 		owner: 'TraderPro',
-		coin: 'ETH',
-		coin_price: '2450.00',
+		coin: 'MOONCAT',
+		coin_price: '0.012',
 		id: 'trade_2'
 	},
 	{
@@ -128,8 +112,8 @@ export const mockTrades: TradesInt[] = [
 		limit_min: 200,
 		limit_max: 10000,
 		owner: 'BitMaster',
-		coin: 'BTC',
-		coin_price: '67450.00',
+		coin: 'SUNDOG',
+		coin_price: '0.04',
 		id: 'trade_3'
 	},
 	{
@@ -137,8 +121,8 @@ export const mockTrades: TradesInt[] = [
 		limit_min: 75,
 		limit_max: 2500,
 		owner: 'CoinWhale',
-		coin: 'ETH',
-		coin_price: '2460.00',
+		coin: 'TBULL',
+		coin_price: '0.019',
 		id: 'trade_4'
 	},
 	{
@@ -146,8 +130,8 @@ export const mockTrades: TradesInt[] = [
 		limit_min: 100,
 		limit_max: 5000,
 		owner: 'SatoshiFan',
-		coin: 'BNB',
-		coin_price: '600.00',
+		coin: 'ARES',
+		coin_price: '0.024',
 		id: 'trade_5'
 	},
 	{
@@ -155,8 +139,8 @@ export const mockTrades: TradesInt[] = [
 		limit_min: 150,
 		limit_max: 7500,
 		owner: 'CryptoKing',
-		coin: 'ETH',
-		coin_price: '2445.00',
+		coin: 'MOONCAT',
+		coin_price: '0.012',
 		id: 'trade_6'
 	},
 	{
@@ -164,8 +148,8 @@ export const mockTrades: TradesInt[] = [
 		limit_min: 50,
 		limit_max: 2000,
 		owner: 'TraderPro',
-		coin: 'BNB',
-		coin_price: '598.50',
+		coin: 'SUNDOG',
+		coin_price: '0.04',
 		id: 'trade_7'
 	},
 	{
@@ -183,7 +167,7 @@ export const mockTrades: TradesInt[] = [
 export const mockMyDeals: MyDealsInt[] = [
 	{
 		mem_coin: 'USDT',
-		coin: 'BTC',
+		coin: 'ARES',
 		limit_max: 5000,
 		id: 'mydeal_1',
 		type: 0, // 0 - buy, 1 - sell
@@ -194,7 +178,7 @@ export const mockMyDeals: MyDealsInt[] = [
 	},
 	{
 		mem_coin: 'USDT',
-		coin: 'ETH',
+		coin: 'MOONCAT',
 		limit_max: 3000,
 		id: 'mydeal_2',
 		type: 1,
@@ -205,7 +189,7 @@ export const mockMyDeals: MyDealsInt[] = [
 	},
 	{
 		mem_coin: 'TRX',
-		coin: 'BNB',
+		coin: 'SUNDOG',
 		limit_max: 2000,
 		id: 'mydeal_3',
 		type: 0,
@@ -223,10 +207,10 @@ export const mockTradeInfo: GetTradeInt = {
 	commission_percent: 0.5,
 	mem_coin: 'USDT',
 	type: 0,
-	coin: 'BTC',
+	coin: 'ARES',
 	limit_min: 100,
 	limit_max: 5000,
-	mem_coin_price: 67500,
+	mem_coin_price: 0.024,
 	pino_usdt: 15.25,
 	pino_trx: 95.5
 }
@@ -248,8 +232,8 @@ export const mockWalletHistory: WalletHistoryInt[] = [
 	{
 		type: 'Trade',
 		datetime: '2025-10-10T12:20:00Z',
-		amount: 0.005,
-		coin: 'BTC'
+		amount: 1250,
+		coin: 'ARES'
 	},
 	{
 		type: 'Deposit',
@@ -260,8 +244,8 @@ export const mockWalletHistory: WalletHistoryInt[] = [
 	{
 		type: 'Trade',
 		datetime: '2025-10-08T18:30:00Z',
-		amount: 0.5,
-		coin: 'ETH'
+		amount: 2500,
+		coin: 'MOONCAT'
 	},
 	{
 		type: 'Withdraw',
@@ -275,9 +259,10 @@ export const mockWalletHistory: WalletHistoryInt[] = [
 export const mockWalletBalance = {
 	USDT: 2450.75,
 	TRX: 15620.30,
-	BTC: 0.0234,
-	ETH: 1.456,
-	BNB: 3.25
+	ARES: 1250.5,
+	MOONCAT: 2500.25,
+	SUNDOG: 850.75,
+	TBULL: 1200.0
 }
 
 // Mock адрес кошелька

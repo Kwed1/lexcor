@@ -1,12 +1,10 @@
 import React from 'react'
 // Импорты локальных иконок
 import PINOIcon from '../../../assets/pino.jpg'
-import BNBIcon from '../../../assets/valute-icons/bnb.webp'
-import BTCIcon from '../../../assets/valute-icons/btc.webp'
-import ETHIcon from '../../../assets/valute-icons/eth.webp'
-import LINKIcon from '../../../assets/valute-icons/link.webp'
-import LTCIcon from '../../../assets/valute-icons/litecoin-logo.png'
-import SOLIcon from '../../../assets/valute-icons/Solana_logo.png'
+import AresIcon from '../../../assets/valute-icons/ares.jpg'
+import MooncatIcon from '../../../assets/valute-icons/mooncat.jpg'
+import SundogIcon from '../../../assets/valute-icons/sundog.jpg'
+import TbullIcon from '../../../assets/valute-icons/tbull.jpg'
 import TRXIcon from '../../../assets/valute-icons/trx.svg'
 import USDTIcon from '../../../assets/valute-icons/usdt.svg'
 
@@ -27,12 +25,10 @@ const CryptoIcon: React.FC<Props> = ({ token, size = 'md', className = '' }) => 
     const localIcons: { [key: string]: string } = {
       USDT: USDTIcon,
       TRX: TRXIcon,
-      BNB: BNBIcon,
-      BTC: BTCIcon,
-      ETH: ETHIcon,
-      LINK: LINKIcon,
-      LTC: LTCIcon,
-      SOL: SOLIcon,
+      ARES: AresIcon,
+      MOONCAT: MooncatIcon,
+      SUNDOG: SundogIcon,
+      TBULL: TbullIcon,
       PINO: PINOIcon
     }
     return localIcons[token] || null

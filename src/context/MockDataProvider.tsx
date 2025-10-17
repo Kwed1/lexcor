@@ -65,12 +65,10 @@ export const MockDataProvider: React.FC<MockDataProviderProps> = ({ children }) 
         // Дополнительные монеты из allCoins (только с иконками)
         ...allCoins.map(coin => ({
           token: coin.token,
-          price: coin.token === 'BTC' ? mockWalletBalance.BTC :
-            coin.token === 'ETH' ? mockWalletBalance.ETH :
-              coin.token === 'BNB' ? mockWalletBalance.BNB :
-                coin.token === 'LINK' ? 1.3 :
-                  coin.token === 'LTC' ? 285 :
-                    coin.token === 'SOL' ? 28.5 : 0
+          price: coin.token === 'ARES' ? mockWalletBalance.ARES :
+            coin.token === 'MOONCAT' ? mockWalletBalance.MOONCAT :
+              coin.token === 'SUNDOG' ? mockWalletBalance.SUNDOG :
+                coin.token === 'TBULL' ? mockWalletBalance.TBULL : 0
         }))
       ]
       setMemCoins(memCoins)
