@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('./assets/fonts/Rubik-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('./assets/fonts/Rubik-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Темная тема в стиле крипто-биржи */
+body {
+	margin: 0;
+	background: linear-gradient(135deg, #0B0E11 0%, #161A1E 100%);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Rubik', sans-serif;
+	color: #EAECEF;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Custom scrollbar в стиле крипто-биржи */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: #161A1E;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #2B3139;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #363D47;
+}
+
+/* Input стили */
+input {
+	background-color: #1A1E23;
+	color: #EAECEF;
+	border: 1px solid #2B3139;
+}
+
+input:focus {
+	outline: none;
+	border-color: #FCD535;
+}
+
+input::placeholder {
+	color: #848E9C;
+}
+
+/* Button base стили */
+button {
+	transition: all 0.2s ease;
+}
+
+button:hover {
+	transform: translateY(-1px);
+}
+
+button:active {
+	transform: translateY(0);
+}

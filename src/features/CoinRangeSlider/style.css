@@ -1,0 +1,12 @@
+.track {
+  background: #ddd;
+  height: 10px;
+}
+
+.thumb {
+  height: 20px; /* Высота ползунка */
+  width: 20px; /* Ширина ползунка */
+  background: #007bff; /* Цвет ползунка */
+  border-radius: 50%; /* Круглая форма ползунка */
+  cursor: pointer; /* Указатель при наведении */
+}
