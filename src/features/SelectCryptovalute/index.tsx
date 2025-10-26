@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import { ReactComponent as Arrow } from '../../assets/arrow.svg';
+import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import { ReactComponent as Arrow } from '../../assets/arrow.svg'
 
 interface Props {
 	setValute: React.Dispatch<React.SetStateAction<string>>;
